@@ -1,0 +1,5 @@
+/* Move native tab bar to bottom on web */
+[aria-label="Main"] {
+  top: auto !important;
+  bottom: 24px !important;
+}

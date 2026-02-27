@@ -1,14 +1,11 @@
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import "react-native-reanimated";
+import "./global.css";
+import NativeTabBar from "../components/native/native-tab-bar";
 
 export default function RootLayout() {
-  return (
-    <>
-      <Stack>
-        <Stack.Screen name="index" options={{ title: 'Odo Vehicle Tracker' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </>
-  );
+   return (
+      <>
+         <NativeTabBar />
+      </>
+   );
 }
